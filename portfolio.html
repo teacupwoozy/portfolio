@@ -3,112 +3,126 @@
 <head>
 	<meta charset="utf-8">
 	<title>Stacy Montemayor | Front End Developer</title>
+	<link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="portfolio.css">
 </head>
 <body>
-	<header>
-		<a href="#">
-			<h5>slm | front end developer</h5>
-		</a>
-		<nav>
-		<ul>
-			<li><a href="#">bio</a></li>
-			<li><a href="#">portfolio</a></li>
-			<li><a href="#">reach out</a></li>
-			<li><a href="#">passions</a></li>	
-		</ul>
+	<header id="nav-header">
+		<h1 class="nav-cell"><a href="#">stacyCodes</a><br>
+			<span id="h1-span">front end developer</span></h1>
+
+		<nav class="nav-cell">
+			<a name="home" id="menu-icon"></a>
+			<ul>
+				<li class="nav-menu-item"><a href="#home">home</a></li>
+				<li class="nav-menu-item"><a href="#bio">bio</a></li>
+				<li class="nav-menu-item"><a href="#portfolio">portfolio</a></li>
+				<li class="nav-menu-item"><a href="#reachout">reach out</a></li>
+				<li class="nav-menu-item"><a href="#passions">passions</a></li>	
+			</ul>
 		</nav>
 	</header>
 	<!-- Main content -->
-	<section>
+	<section id="nav-padding">
+		<a name="home"></a>
 		<!-- splash -->
-		<article>
-			<h1>stacy l. montemayor</h1>
-			<h5>I am learning to become an awesome front end developer. I love highly functional websites that are a breeze to engage with and gorgeous to look at.</h5>
+		<article id="hello">
+			<header><h2>Aloha.
+			<br>I'm Stacy Montemayor.<br><br>
+			I am learning to become an awesome front end developer. I love highly functional websites that are a breeze to engage with and gorgeous to look at.</h2></header>
 		</article>
 
 		<!-- bio -->
+		<a name="bio"></a>
 		<article>
-			<h2>bio</h2>
+			<header><h3>BIO</h3></header>
 			<p>Enter bio here.</p>
 		</article>
 
 		<!-- gallery -->
 		<article>
-			<h2>portfolio</h2>
-			<div id="portfolio-grid">
+			<a name="portfolio"></a>
+			<header><h3>PORTFOLIO</h3></header>
+			<div id="container">
 				<div class="project-tile">
-					<a href="#"><img src="http://via.placeholder.com/250.jpg" alt="description here"></a>
-					<ul>
-						<li>tool type</li>
-						<li>tool type</li>
-					</ul>
-					<h3>Stacy Montemayor Portfolio</h3>
+					<a href="#"><img src="http://via.placeholder.com/300x250.jpg" alt="description here"></a>
+					<div class="portfolio-description-container">
+						<ul class="portfolio-description-cell">
+							<li class="test">HTML</li>
+							<li>CSS</li>
+						</ul>
+						<h4 class="portfolio-description-cell">www.votesabroad.com</h4>
+					</div>
+					<p>Informational website guiding US citizens living overseas on the process to register and vote from abroad.</p>
+					
 				</div>
 
 				<div class="project-tile">
-					<a href="#"><img src="http://via.placeholder.com/250.jpg" alt="description here"></a>
-					<ul>
-						<li>tool type</li>
-						<li>tool type</li>
-					</ul>
-					<h3>Deployment: Volunteer Intake</h3>
+					<a href="#"><img src="http://via.placeholder.com/300x250.jpg" alt="description here"></a>
+					<div class="portfolio-description-container">
+						<ul class="portfolio-description-cell">
+							<li class="test">HTML</li>
+							<li>CSS</li>
+						</ul>
+						<h4 class="portfolio-description-cell">www.teacupwoozy.com</h4>
+					</div>
+					<p>A multi-page website for a travel planning business.</p>
 				</div>
 
 				<div class="project-tile">
-					<a href="#"><img src="http://via.placeholder.com/250.jpg" alt="description here"></a>
-					<ul>
-						<li>tool type</li>
-						<li>tool type</li>
-					</ul>
-					<h3>4 Corners Photography</h3>
-				</div>
-
-				<div class="project-tile">
-					<a href="#"><img src="http://via.placeholder.com/250.jpg" alt="description here"></a>
-					<ul>
-						<li>tool type</li>
-						<li>tool type</li>
-					</ul>
-					<h3>Teacup Woozy Travel</h3>
+					<a href="#"><img src="http://via.placeholder.com/300x250.jpg" alt="description here"></a>
+					<div class="portfolio-description-container">
+						<ul class="portfolio-description-cell">
+							<li class="test">HTML</li>
+							<li>CSS</li>
+						</ul>
+						<h4 class="portfolio-description-cell">www.stacycodes.com</h4>
+					</div>
+					<p>Single-page portfolio website.</p>
 				</div>
 			</div>
 		</article>
 
 		<!-- reach out -->
 		<article>
-			<h2>reach out</h2>
-			<div id="socials-grid">
+			<a name="reachout"></a>
+			<header><h3>REACH OUT</h3></header>
+			<div id="socials-container">
 				<div class="contact-cell">
-					<a href="https://github.com/teacupwoozy" target="_blank"><img src="http://gdurl.com/LLEq" alt="github icon"></a>
-					<h4>Find me on GitHub</h4>
+					<a href="https://github.com/teacupwoozy" target="_blank"><img src="images/black-github-64.png" alt="github icon"></a>
+					<h4>Explore my GitHub</h4>
 				</div>
 
 				<div class="contact-cell">
-					<a href="https://www.linkedin.com/in/stacymontemayor/" target="_blank"><img src="http://gdurl.com/AQL3" alt="LinkedIn icon"></a>
+					<a href="https://www.linkedin.com/in/stacymontemayor/" target="_blank"><img src="images/black-linkedin-66.png" alt="LinkedIn icon"></a>
 					<h4>Find me on LinkedIn</h4>
 				</div>
 
 				<div class="contact-cell">
-					<a href="https://twitter.com/TeacupWoozy" target="_blank"><img src="http://gdurl.com/Cg4o" alt="twitter icon"></a>
+					<a href="https://twitter.com/TeacupWoozy" target="_blank"><img src="images/black-twitter-64.png" alt="twitter icon"></a>
 					<h4>Say hello on Twitter</h4>
 				</div>
 			</div>
 		</article>
 
 		<!-- passions -->
+		<a name="passions"></a>
 		<article>
-			<h2>I'm a well-rounded human being.</h2>
-			<ul>
+			<header><h3>WELL-ROUNDED HUMAN PERSON</h3></header>
+			<ul id="human">
 				<li>Cool as a Cucumber: I'm a former 911 dispatcher. This means I am super chill and laser-focused under pressure.</li>
 				<li>Volunteerism: I believe in being of service. Some of the organizations I believe in and have given my time to in the last few years: <a href="https://mauiforestbirds.org/">Maui Forest Bird Recorvery Project</a>, <a href="https://www.nature.org/ourinitiatives/regions/northamerica/unitedstates/hawaii/index.htm">The Nature Conservancy (Hawai'i)</a>, <a href="http://www.seattletilth.org/">Seattle Tilth</a>, and <a href="https://www.envia.org/">Fundación En Vía</a>.</li>
 				<li>Well-traveled: I have lived in multiple countries. I value and understand the importance of diversity.</li>
+				<li>Currently location-independent and living in Mexico. Open to relocation in the United States, Canada, New Zealand, and parts of Europe and Latin America.</li>
 			</ul>
 		</article>
 	</section>
 
 	<!-- footer -->
 	<footer>
-		<p>&copy; Stacy Montemayor 2018</p>
+		<br><br>
+		<p>&copy; Stacy Montemayor 2018  👩🏻‍💻🤙🏼🌈💃🏻 </p>
+	
 	</footer>
 
 </body>
