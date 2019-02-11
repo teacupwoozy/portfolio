@@ -1,3 +1,5 @@
+/*NOTES: mobile menu will need js functionality/fixes*/
+
 body {
 	margin: 0;
 	padding: 0;
@@ -6,10 +8,10 @@ body {
 }
 
 p {
-	margin: 0;
+	line-height: 1.5;
 }
 p, h3, h4 {
-	padding: 0 8px;
+	margin: 20px;
 
 }
 
@@ -35,6 +37,7 @@ h3 {
 
 h4 {
 	margin: 0;
+	font-weight: normal;
 }
 
 #h1-span {
@@ -46,7 +49,7 @@ h4 {
 }
 
 #nav-header {
-	background-color: #eef7f0;
+	background-color: #dcefe0;
 	height: 110px;
 	width: 100%;
 	position: fixed;
@@ -122,7 +125,7 @@ ul {
 	background-position: center center;
 	position: relative;
 	width: 100%;
-	height: 100vh;
+	height: calc(100vh - 100px);
 	padding: 0;
 
 
@@ -139,12 +142,12 @@ ul {
 	margin-left: auto;
 	margin-right: auto;
 	margin-bottom: 35px;
-	width: 300px;
+	width: 350px;
 }
 
 .project-tile p {
 	font-size: 18px;
-	padding: 0;
+	margin: 0;
 }
 
 .portfolio-description-container {
@@ -162,11 +165,25 @@ ul {
 
 .contact-cell {
 	text-align: center;
-	padding: 15px 3px;
+	padding: 20px 3px;
 
 }
-ul#human {
-	list-style-type: circle;
+
+.human-container {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	padding: 0 15px;
+}
+
+p.human-cell {
+	margin: 20px 10px;
+}
+
+img.human-cell {
+	width: 50px;
+	height: 50px;
+	padding: 20px;
 }
 
 /*footer*/
@@ -178,8 +195,74 @@ footer {
 footer p {
 	font-size: 17px;
 	color: #7e4595;
+	margin: 0;
+	padding: 8px 0;
 }
 
+/*Media queries*/
+@media screen and (min-width: 480px) {
+	#hello h2 {
+		max-width: 85%;
+	}
+	#socials-container {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: space-around;
+	}
+	.contact-cell {
+		width: calc(50% - 2rem);
+	}
+}
+
+@media screen and (min-width: 768px) {
+	body {
+		font-size: 22px;
+	}
+	#socials-container {
+		max-width: 70%;
+		margin: 0 auto;
+	}
+	.contact-cell {
+		width: calc(33.33% - 2rem);
+	}
+	#bio p {
+		max-width: 75%;
+		margin: 0 auto;
+	}
+}
+
+@media screen and (min-width: 992px) {
+	#menu-icon {
+		display: none;
+	}
+	.nav-cell {
+		width: 400px;
+	}
+	/*need to fix*/
+	nav ul {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: nowrap;
+/*		justify-content: flex-start;*/
+	}
+	#hello h2 {
+		max-width: 80%;
+	}
+	#container {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+	.project-tile {
+		padding: 10px 30px;
+	}
+	.human-container {
+		max-width: 80%;
+		margin: 0 auto;
+	}
+
+}
 
 
 
