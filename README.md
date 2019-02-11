@@ -1,2 +1,2 @@
-# portfolio
-work in progress portfolio website
+# portfolio - RIP
+old portfolio website
